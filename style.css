@@ -1,0 +1,123 @@
+
+
+body {
+    margin:50px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    transform: translateY(-5%); 
+}
+h1 {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+    margin-top: 0; 
+    padding: 20px 0; 
+    font-style: italic;
+}
+form {
+    padding: 20px 60px;
+    border: 1px solid #ccc; 
+    animation: appear 1s ease-out forwards; 
+    border-radius: 8px;
+    max-width: 1000px; 
+    margin: auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px; /* Adjusted margin for better spacing */
+    color: #fff; /* White color for better contrast against darker backgrounds */
+    font-size: 1.2rem; /* Increased font size for better visibility */
+    font-weight: bold; /* Bold font weight for added emphasis */
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent dark background for readability */
+    padding: 10px; /* Padding for a more defined label area */
+    border-radius: 4px; /* Rounded corners for a softer look */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Subtle shadow for depth */
+    letter-spacing: 0.5px; /* Slightly increased letter-spacing for clarity */
+    font-style: italic;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px; /* Slightly larger padding for a roomier input field */
+    margin-bottom: 25px; /* Increased bottom margin for more space between fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #fff; /* Light background for input fields for contrast */
+    color: #333; /* Dark text for readability */
+    font-style: italic;
+}
+
+input[type="checkbox"] {
+    margin-bottom: 25px; /* Ensures consistent spacing with other fields */
+}
+
+button[type="submit"] {
+    background: linear-gradient(to right, #4CAF50, #66bb6a); /* Gradient effect */
+    color: white;
+    padding: 12px 24px; /* Slightly larger padding for a bigger, easier to click button */
+    border: none;
+    border-radius: 30px; /* More pronounced rounded corners for a pill shape */
+    cursor: pointer;
+    font-size: 1rem; /* Adjust based on your design */
+    font-weight: bold; /* Makes text stand out */
+    text-transform: uppercase; /* Aesthetic choice for button text */
+    letter-spacing: 1px; /* Increases spacing between letters */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+    display: block; /* Makes the button take its own line */
+    width: auto; /* Allows the button to size according to its content */
+    margin: 20px auto 0; /* Increases space above the button and centers it */
+    padding: 15px 40px; /* Large
+}
+
+button[type="submit"]:hover {
+    background: linear-gradient(to right, #66bb6a, #4CAF50); /* Slightly change gradient direction */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15); /* Enhanced shadow for a lifted effect */
+    transform: translateY(-2px); /* Slight upward movement */
+}
+
+
+@keyframes appear {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    minWidth: 100%;
+    minHeight: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100; 
+    background-size: cover;
+}
+
+
+
+.header-container h1 {
+    font-size: 2.5rem; /* Large, readable font size */
+    font-weight: 700; /* Bold font weight */
+    margin-bottom: 20px; /* Space between the headline and the subtext */
+}
+
+.header-container p {
+    font-size: 1.2rem; /* Comfortable reading size */
+    max-width: 600px; /* Max width for optimal reading line length */
+    margin: 0 auto; /* Centers the text block */
+}

@@ -1,0 +1,48 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Registration Form</title>
+</head>
+<body>
+    <video autoplay muted loop id="backgroundVideo">
+        <source src="pexels-zura-narimanishvili-5490419 (1080p).mp4" type="video/mp4">
+        Your browser does not support HTML5 video.
+    </video>
+    <div class="header-container">
+        <h1>Welcome to Our World</h1>
+    </div>
+    <div class="form-container">
+        <form action="/submit-contact-info" method="post" id="contact form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="password">Password:</label>
+            <input type="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" name="password" minlength="8" maxlength="16" required>
+            <label for="confirmation">Confirm password:</label>
+            <input type="password" id="confirmation" name="confirmation" minlength="8" maxlength="16" required>
+            <label for="birthday">Birthday:</label>
+            <input type="date" id="birthday" name="birthday" min="1924-01-01" max="2011-12-31" required>
+            
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Please select</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+            </select>
+
+            <label for="agree">
+                <input type="checkbox" id="agree" name="agree" required>
+                Agree to Terms
+            </label>
+
+            <button type="submit">Sign up</button>
+        </form>
+    </div>
+
+</body>
+</html>
